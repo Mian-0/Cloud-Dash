@@ -1,0 +1,14 @@
+@media only screen and (max-width: 1258px) and (min-width: 961px) {
+    .sidebar-container {
+        width: 230px;
+    }
+}
+
+
+
+@media only screen and (max-width: 960px) {
+    .sidebar-container {
+        width: 100%;
+        transform: translateX(-100%);
+    }
+}
