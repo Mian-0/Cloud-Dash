@@ -34,379 +34,411 @@
 </head>
 
 <body>
-    <!-- SideBar Started -->
-    <section class="sidebar-container">
-        <aside class="sidebar-row">
-            <div class="sidebar-logo-column">
-                <img src="images/logo.png" alt="">
+    <div class="main-container">
+        <!-- SideBar Started -->
+        <section class="sidebar-container">
+            <aside class="sidebar-row">
+                <div class="sidebar-logo-column">
+                    <img src="images/logo.png" onclick="mobileHeaderClose(this)" alt="">
+                </div>
+                <div class="sidebar-navs-column">
+                    <nav>
+                        <ul>
+                            <!-- Link -->
+                            <li class="active-sidebar-li" onclick="togglerr(this)">
+                                <div class="dropsdowns-col-main">
+                                    <i class="fa-duotone fa-signal-bars-good" style="--fa-primary-color: #fff; --fa-secondary-color: #9fa0fc;"></i>
+                                    <span>Dashboard</span>
+                                </div>
+                            </li>
+                            <!-- Link -->
+                            <li class="not-active-sidebar-li" onclick="togglerr(this)">
+                                <div class="dropsdowns-col-1">
+                                    <div class="for-content">
+                                        <i class="fa-duotone fa-user" style=" --fa-primary-color: var( --primary-icon-color-sidebar); --fa-secondary-color: var( --secondary-icon-color-sidebar)"></i>
+                                        <span>Customers</span>
+                                    </div>
+                                    <div class="">
+                                        <i class="fa-solid fa-chevron-down for-changing-icon" style="padding: 0; font-size: 8px; color: #5c718d;"></i>
+                                    </div>
+                                </div>
+                                <ul class="dropdown-items-in-sidebar" style="display: none;">
+                                    <li>Test 101</li>
+                                    <li>Test 101</li>
+                                    <li>Test 101</li>
+                                </ul>
+                            </li>
+                            <!-- Link -->
+                            <li class="not-active-sidebar-li" onclick="togglerr(this)">
+                                <div class="dropsdowns-col-1">
+                                    <div class="for-content">
+                                        <i class="fa-duotone fa-calculator" style=" --fa-primary-color: var( --primary-icon-color-sidebar); --fa-secondary-color: var( --secondary-icon-color-sidebar)"></i>
+                                        <span>Accounting</span>
+                                    </div>
+                                    <div class="">
+                                        <i class="fa-solid fa-chevron-down for-changing-icon" style="padding: 0; font-size: 8px; color: #5c718d;"></i>
+                                    </div>
+                                </div>
+                                <ul class="dropdown-items-in-sidebar" style="display: none;">
+                                    <li>Test 101</li>
+                                    <li>Test 101</li>
+                                    <li>Test 101</li>
+                                </ul>
+                            </li>
+                            <!-- Link -->
+                            <li class="not-active-sidebar-li" onclick="togglerr(this)">
+                                <div class="dropsdowns-col-1">
+                                    <div class="for-content">
+                                        <i class="fa-duotone fa-wallet" style=" --fa-primary-color: var( --primary-icon-color-sidebar); --fa-secondary-color: var( --secondary-icon-color-sidebar)"></i>
+                                        <span>Sales</span>
+                                    </div>
+                                    <div class="">
+                                        <i class="fa-solid fa-chevron-down for-changing-icon" style="padding: 0; font-size: 8px; color: #5c718d;"></i>
+                                    </div>
+                                </div>
+                                <ul class="dropdown-items-in-sidebar" style="display: none;">
+                                    <li>Test 101</li>
+                                    <li>Test 101</li>
+                                    <li>Test 101</li>
+                                </ul>
+                            </li>
+                            <!-- Link -->
+                            <li class="not-active-sidebar-li" onclick="togglerr(this)">
+                                <div class="dropsdowns-col-1">
+                                    <div class="for-content">
+                                        <i class="fa-duotone fa-square-sliders-vertical" style=" --fa-primary-color: var( --primary-icon-color-sidebar); --fa-secondary-color: var( --secondary-icon-color-sidebar)"></i>
+                                        <span>Suppliers</span>
+                                    </div>
+                                    <div class="">
+                                        <i class="fa-solid fa-chevron-down for-changing-icon" style="padding: 0; font-size: 8px; color: #5c718d;"></i>
+                                    </div>
+                                </div>
+                                <ul class="dropdown-items-in-sidebar" style="display: none;">
+                                    <li>Test 101</li>
+                                    <li>Test 101</li>
+                                    <li>Test 101</li>
+                                </ul>
+                            </li>
+                            <!-- Link -->
+                            <li class="not-active-sidebar-li" onclick="togglerr(this)">
+                                <div class="dropsdowns-col-1">
+                                    <div class="for-content">
+                                        <i class="fa-duotone fa-store" style=" --fa-primary-color: var( --primary-icon-color-sidebar); --fa-secondary-color: var( --secondary-icon-color-sidebar)"></i>
+                                        <span>Purchase</span>
+                                    </div>
+                                    <div class="">
+                                        <i class="fa-solid fa-chevron-down for-changing-icon" style="padding: 0; font-size: 8px; color: #5c718d;"></i>
+                                    </div>
+                                </div>
+                                <ul class="dropdown-items-in-sidebar" style="display: none;">
+                                    <li>Test 101</li>
+                                    <li>Test 101</li>
+                                    <li>Test 101</li>
+                                </ul>
+                            </li>
+                            <!-- Link -->
+                            <li class="not-active-sidebar-li" onclick="togglerr(this)">
+                                <div class="dropsdowns-col-1">
+                                    <div class="for-content">
+                                        <i class="fa-duotone fa-money-bill-simple" style=" --fa-primary-color: var( --primary-icon-color-sidebar); --fa-secondary-color: var( --secondary-icon-color-sidebar)"></i>
+                                        <span>Subscriptions</span>
+                                    </div>
+                                    <div class="">
+                                        <i class="fa-solid fa-chevron-down for-changing-icon" style="padding: 0; font-size: 8px; color: #5c718d;"></i>
+                                    </div>
+                                </div>
+                                <ul class="dropdown-items-in-sidebar" style="display: none;">
+                                    <li>Test 101</li>
+                                    <li>Test 101</li>
+                                    <li>Test 101</li>
+                                </ul>
+                            </li>
+                            <!-- Link -->
+                            <li class="not-active-sidebar-li" onclick="togglerr(this)">
+                                <div class="dropsdowns-col-1">
+                                    <div class="for-content">
+                                        <i class="fa-duotone fa-clipboard-check" style=" --fa-primary-color: var( --primary-icon-color-sidebar); --fa-secondary-color: var( --secondary-icon-color-sidebar)"></i>
+                                        <span>contracts</span>
+                                    </div>
+                                    <div class="">
+                                        <i class="fa-solid fa-chevron-down for-changing-icon" style="padding: 0; font-size: 8px; color: #5c718d;"></i>
+                                    </div>
+                                </div>
+                                <ul class="dropdown-items-in-sidebar" style="display: none;">
+                                    <li>Test 101</li>
+                                    <li>Test 101</li>
+                                    <li>Test 101</li>
+                                </ul>
+                            </li>
+                            <!-- Link -->
+                            <li class="not-active-sidebar-li">
+                                <div class="dropsdowns-col-1">
+                                    <div class="for-content">
+                                        <i class="fa-duotone fa-cube" style=" --fa-primary-color: var( --primary-icon-color-sidebar); --fa-secondary-color: var( --secondary-icon-color-sidebar)"></i>
+                                        <span>Projects</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- Link -->
+                            <li class="not-active-sidebar-li" onclick="togglerr(this)">
+                                <div class="dropsdowns-col-1">
+                                    <div class="for-content">
+                                        <i class="fa-duotone fa-circle-user" style=" --fa-primary-color: var( --primary-icon-color-sidebar); --fa-secondary-color: var( --secondary-icon-color-sidebar)"></i>
+                                        <span>Leads</span>
+                                    </div>
+                                    <div class="">
+                                        <i class="fa-solid fa-chevron-down for-changing-icon" style="padding: 0; font-size: 8px; color: #5c718d;"></i>
+                                    </div>
+                                </div>
+                                <ul class="dropdown-items-in-sidebar" style="display: none;">
+                                    <li>Test 101</li>
+                                    <li>Test 101</li>
+                                    <li>Test 101</li>
+                                </ul>
+                            </li>
+                            <!-- Link -->
+                            <li class="not-active-sidebar-li" onclick="togglerr(this)">
+                                <div class="dropsdowns-col-1">
+                                    <div class="for-content">
+                                        <i class="fa-duotone fa-message-sms" style=" --fa-primary-color: var( --primary-icon-color-sidebar); --fa-secondary-color: var( --secondary-icon-color-sidebar)"></i>
+                                        <span>SMS</span>
+                                    </div>
+                                    <div class="">
+                                        <i class="fa-solid fa-chevron-down for-changing-icon" style="padding: 0; font-size: 8px; color: #5c718d;"></i>
+                                    </div>
+                                </div>
+                                <ul class="dropdown-items-in-sidebar" style="display: none;">
+                                    <li>Test 101</li>
+                                    <li>Test 101</li>
+                                    <li>Test 101</li>
+                                </ul>
+                            </li>
+                            <!-- Link -->
+                            <li class="not-active-sidebar-li" onclick="togglerr(this)">
+                                <div class="dropsdowns-col-1">
+                                    <div class="for-content">
+                                        <i class="fa-duotone fa-phone-volume fa-flip-horizontal" style="--fa-primary-color: var( --primary-icon-color-sidebar); --fa-secondary-color: var(--secondary-icon-color-sidebar)"></i>
+                                        <span>Support</span>
+                                    </div>
+                                    <div class="">
+                                        <i class="fa-solid fa-chevron-down for-changing-icon" style="padding: 0; font-size: 8px; color: #5c718d;"></i>
+                                    </div>
+                                </div>
+                                <ul class="dropdown-items-in-sidebar" style="display: none;">
+                                    <li>Test 101</li>
+                                    <li>Test 101</li>
+                                    <li>Test 101</li>
+                                </ul>
+                            </li>
+                            <!-- Link -->
+                            <li class="not-active-sidebar-li" onclick="togglerr(this)">
+                                <div class="dropsdowns-col-1">
+                                    <div class="for-content">
+                                        <i class="fa-duotone fa-book-open" style=" --fa-primary-color: var( --secondary-icon-color-sidebar); --fa-secondary-color: var( --primary-icon-color-sidebar)"></i>
+                                        <span>Knowledgebase</span>
+                                    </div>
+                                    <div class="">
+                                        <i class="fa-solid fa-chevron-down for-changing-icon" style="padding: 0; font-size: 8px; color: #5c718d;"></i>
+                                    </div>
+                                </div>
+                                <ul class="dropdown-items-in-sidebar" style="display: none;">
+                                    <li>Test 101</li>
+                                    <li>Test 101</li>
+                                    <li>Test 101</li>
+                                </ul>
+                            </li>
+                            <!-- Link -->
+                            <li class="not-active-sidebar-li" onclick="togglerr(this)">
+                                <div class="dropsdowns-col-1">
+                                    <div class="for-content">
+                                        <i class="fa-duotone fa-bag-shopping" style=" --fa-primary-color: var( --primary-icon-color-sidebar); --fa-secondary-color: var( --secondary-icon-color-sidebar)"></i>
+                                        <span>Orders</span>
+                                    </div>
+                                    <div class="">
+                                        <i class="fa-solid fa-chevron-down for-changing-icon" style="padding: 0; font-size: 8px; color: #5c718d;"></i>
+                                    </div>
+                                </div>
+                                <ul class="dropdown-items-in-sidebar" style="display: none;">
+                                    <li>Test 101</li>
+                                    <li>Test 101</li>
+                                    <li>Test 101</li>
+                                </ul>
+                            </li>
+                            <!-- Link -->
+                            <li class="not-active-sidebar-li" onclick="togglerr(this)">
+                                <div class="dropsdowns-col-1">
+                                    <div class="for-content">
+                                        <i class="fa-duotone fa-user-group" style=" --fa-primary-color: var( --primary-icon-color-sidebar); --fa-secondary-color: var( --secondary-icon-color-sidebar)"></i>
+                                        <span>HRM</span>
+                                    </div>
+                                    <div class="">
+                                        <i class="fa-solid fa-chevron-down for-changing-icon" style="padding: 0; font-size: 8px; color: #5c718d;"></i>
+                                    </div>
+                                </div>
+                                <ul class="dropdown-items-in-sidebar" style="display: none;">
+                                    <li>Test 101</li>
+                                    <li>Test 101</li>
+                                    <li>Test 101</li>
+                                </ul>
+                            </li>
+                            <!-- Link -->
+                            <li class="not-active-sidebar-li">
+                                <div class="dropsdowns-col-1">
+                                    <div class="for-content">
+                                        <i class="fa-solid fa-folder" style="color: var(--primary-icon-color-sidebar);"></i>
+                                        <span>Documents</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- Link -->
+                            <li class="not-active-sidebar-li">
+                                <div class="dropsdowns-col-1">
+                                    <div class="for-content">
+                                        <i class="fa-duotone fa-list-check" style=" --fa-primary-color: var( --primary-icon-color-sidebar); --fa-secondary-color: var( --secondary-icon-color-sidebar)"></i>
+                                        <span>Tasks</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- Link -->
+                            <li class="not-active-sidebar-li">
+                                <div class="dropsdowns-col-1">
+                                    <div class="for-content">
+                                        <i class="fa-duotone fa-clock-rotate-left" style=" --fa-primary-color: var( --primary-icon-color-sidebar); --fa-secondary-color: var( --secondary-icon-color-sidebar)"></i>
+                                        <span>Calender</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- Link -->
+                            <li class="not-active-sidebar-li" onclick="togglerr(this)">
+                                <div class="dropsdowns-col-1">
+                                    <div class="for-content">
+                                        <i class="fa-duotone fa-inboxes" style=" --fa-primary-color: var( --primary-icon-color-sidebar); --fa-secondary-color: var( --secondary-icon-color-sidebar)"></i>
+                                        <span>Products & Service</span>
+                                    </div>
+                                    <div class="">
+                                        <i class="fa-solid fa-chevron-down for-changing-icon" style="padding: 0; font-size: 8px; color: #5c718d;"></i>
+                                    </div>
+                                </div>
+                                <ul class="dropdown-items-in-sidebar" style="display: none;">
+                                    <li>Test 101</li>
+                                    <li>Test 101</li>
+                                    <li>Test 101</li>
+                                </ul>
+                            </li>
+                            <!-- Link -->
+                            <li class="not-active-sidebar-li" onclick="togglerr(this)">
+                                <div class="dropsdowns-col-1">
+                                    <div class="for-content">
+                                        <i class="fa-duotone fa-chart-column" style=" --fa-primary-color: var( --primary-icon-color-sidebar); --fa-secondary-color: var( --secondary-icon-color-sidebar)"></i>
+                                        <span>Reports</span>
+                                    </div>
+                                    <div class="">
+                                        <i class="fa-solid fa-chevron-down for-changing-icon" style="padding: 0; font-size: 8px; color: #5c718d;"></i>
+                                    </div>
+                                </div>
+                                <ul class="dropdown-items-in-sidebar" style="display: none;">
+                                    <li>Test 101</li>
+                                    <li>Test 101</li>
+                                    <li>Test 101</li>
+                                </ul>
+                            </li>
+                            <!-- Link -->
+                            <li class="not-active-sidebar-li" onclick="togglerr(this)">
+                                <div class="dropsdowns-col-1">
+                                    <div class="for-content">
+                                        <i class="fa-solid fa-command" style="color: var(--secondary-icon-color-sidebar);"></i>
+                                        <span>Utillities</span>
+                                    </div>
+                                    <div class="">
+                                        <i class="fa-solid fa-chevron-down for-changing-icon" style="padding: 0; font-size: 8px; color: #5c718d;"></i>
+                                    </div>
+                                </div>
+                                <ul class="dropdown-items-in-sidebar" style="display: none;">
+                                    <li>Test 101</li>
+                                    <li>Test 101</li>
+                                    <li>Test 101</li>
+                                </ul>
+                            </li>
+                            <!-- Link -->
+                            <li class="not-active-sidebar-li" onclick="togglerr(this)">
+                                <div class="dropsdowns-col-1">
+                                    <div class="for-content">
+                                        <i class="fa-duotone fa-cannabis" style=" --fa-primary-color: var( --primary-icon-color-sidebar); --fa-secondary-color: var( --secondary-icon-color-sidebar)"></i>
+                                        <span>Apperance</span>
+                                    </div>
+                                    <div class="">
+                                        <i class="fa-solid fa-chevron-down for-changing-icon" style="padding: 0; font-size: 8px; color: #5c718d;"></i>
+                                    </div>
+                                </div>
+                                <ul class="dropdown-items-in-sidebar" style="display: none;">
+                                    <li>Test 101</li>
+                                    <li>Test 101</li>
+                                    <li>Test 101</li>
+                                </ul>
+                            </li>
+                            <!-- Link -->
+                            <li class="not-active-sidebar-li">
+                                <div class="dropsdowns-col-1">
+                                    <div class="for-content">
+                                        <i class="fa-duotone fa-link" style=" --fa-primary-color: var( --primary-icon-color-sidebar); --fa-secondary-color: var( --secondary-icon-color-sidebar)"></i>
+                                        <span>Plugins</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- Link -->
+                            <li class="not-active-sidebar-li" onclick="togglerr(this)">
+                                <div class="dropsdowns-col-1">
+                                    <div class="for-content">
+                                        <i class="fa-duotone fa-gear" style=" --fa-primary-color: var( --primary-icon-color-sidebar); --fa-secondary-color: var( --secondary-icon-color-sidebar)"></i>
+                                        <span>Settings</span>
+                                    </div>
+                                    <div class="">
+                                        <i class="fa-solid fa-chevron-down for-changing-icon" style="padding: 0; font-size: 8px; color: #5c718d;"></i>
+                                    </div>
+                                </div>
+                                <ul class="dropdown-items-in-sidebar" style="display: none;">
+                                    <li>Test 101</li>
+                                    <li>Test 101</li>
+                                    <li>Test 101</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </aside>
+        </section>
+        <!-- SideBar Completed -->
+    
+        <!-- Main Sections -->
+        <section class="dashboard-container">
+            <div class="dashboard-header-row">
+                <header>
+                    <div class="dashboard-header-logo-column">
+                        <i class="fa-duotone fa-bars-sort" onclick="mobileHeaderOpen(this)" style="--fa-primary-color: #0080ff; --fa-secondary-color: #000000;"></i>
+                    </div>
+                    <div class="dashboard-header-navs-column">
+                        <nav>
+                            <ul>
+                                <li>
+                                    <i class="fa-duotone fa-sliders-simple" style="--fa-primary-color: var(--secondary-icon-color-dashboard-header ); --fa-secondary-color: var(--primary-icon-color-dashboard-header)"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-duotone fa-square-check" style="--fa-primary-color: var(--secondary-icon-color-dashboard-header ); --fa-secondary-color: var(--primary-icon-color-dashboard-header)"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-duotone fa-clipboard-list" style="--fa-primary-color: var(--secondary-icon-color-dashboard-header ); --fa-secondary-color: var(--primary-icon-color-dashboard-header)"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-duotone fa-circle-user" style="--fa-primary-color: var(--secondary-icon-color-dashboard-header ); --fa-secondary-color: var(--primary-icon-color-dashboard-header)"></i>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </header>
             </div>
-            <div class="sidebar-navs-column">
-                <nav>
-                    <ul>
-                        <!-- Link -->
-                        <li class="active-sidebar-li" onclick="toggleDropdown(this)">
-                            <div class="dropsdowns-col-main">
-                                <i class="fa-duotone fa-signal-bars-good" style="--fa-primary-color: #fff; --fa-secondary-color: #9fa0fc;"></i>
-                                <span>Dashboard</span>
-                            </div>
-                        </li>
-                        <!-- Link -->
-                        <li class="not-active-sidebar-li" onclick="toggleDropdown(this)">
-                            <div class="dropsdowns-col-1">
-                                <div class="for-content">
-                                    <i class="fa-duotone fa-user" style=" --fa-primary-color: var( --primary-icon-color-sidebar); --fa-secondary-color: var( --secondary-icon-color-sidebar)"></i>
-                                    <span>Customers</span>
-                                </div>
-                                <div class="">
-                                    <i class="fa-solid fa-chevron-down for-changing-icon" style="padding: 0; font-size: 8px; color: #5c718d;"></i>
-                                </div>
-                            </div>
-                            <ul class="dropdown-items-in-sidebar" style="display: none;">
-                                <li>Test 101</li>
-                                <li>Test 101</li>
-                                <li>Test 101</li>
-                            </ul>
-                        </li>
-                        <!-- Link -->
-                        <li class="not-active-sidebar-li" onclick="toggleDropdown(this)">
-                            <div class="dropsdowns-col-1">
-                                <div class="for-content">
-                                    <i class="fa-duotone fa-calculator" style=" --fa-primary-color: var( --primary-icon-color-sidebar); --fa-secondary-color: var( --secondary-icon-color-sidebar)"></i>
-                                    <span>Accounting</span>
-                                </div>
-                                <div class="">
-                                    <i class="fa-solid fa-chevron-down for-changing-icon" style="padding: 0; font-size: 8px; color: #5c718d;"></i>
-                                </div>
-                            </div>
-                            <ul class="dropdown-items-in-sidebar" style="display: none;">
-                                <li>Test 101</li>
-                                <li>Test 101</li>
-                                <li>Test 101</li>
-                            </ul>
-                        </li>
-                        <!-- Link -->
-                        <li class="not-active-sidebar-li" onclick="toggleDropdown(this)">
-                            <div class="dropsdowns-col-1">
-                                <div class="for-content">
-                                    <i class="fa-duotone fa-wallet" style=" --fa-primary-color: var( --primary-icon-color-sidebar); --fa-secondary-color: var( --secondary-icon-color-sidebar)"></i>
-                                    <span>Sales</span>
-                                </div>
-                                <div class="">
-                                    <i class="fa-solid fa-chevron-down for-changing-icon" style="padding: 0; font-size: 8px; color: #5c718d;"></i>
-                                </div>
-                            </div>
-                            <ul class="dropdown-items-in-sidebar" style="display: none;">
-                                <li>Test 101</li>
-                                <li>Test 101</li>
-                                <li>Test 101</li>
-                            </ul>
-                        </li>
-                        <!-- Link -->
-                        <li class="not-active-sidebar-li" onclick="toggleDropdown(this)">
-                            <div class="dropsdowns-col-1">
-                                <div class="for-content">
-                                    <i class="fa-duotone fa-square-sliders-vertical" style=" --fa-primary-color: var( --primary-icon-color-sidebar); --fa-secondary-color: var( --secondary-icon-color-sidebar)"></i>
-                                    <span>Suppliers</span>
-                                </div>
-                                <div class="">
-                                    <i class="fa-solid fa-chevron-down for-changing-icon" style="padding: 0; font-size: 8px; color: #5c718d;"></i>
-                                </div>
-                            </div>
-                            <ul class="dropdown-items-in-sidebar" style="display: none;">
-                                <li>Test 101</li>
-                                <li>Test 101</li>
-                                <li>Test 101</li>
-                            </ul>
-                        </li>
-                        <!-- Link -->
-                        <li class="not-active-sidebar-li" onclick="toggleDropdown(this)">
-                            <div class="dropsdowns-col-1">
-                                <div class="for-content">
-                                    <i class="fa-duotone fa-store" style=" --fa-primary-color: var( --primary-icon-color-sidebar); --fa-secondary-color: var( --secondary-icon-color-sidebar)"></i>
-                                    <span>Purchase</span>
-                                </div>
-                                <div class="">
-                                    <i class="fa-solid fa-chevron-down for-changing-icon" style="padding: 0; font-size: 8px; color: #5c718d;"></i>
-                                </div>
-                            </div>
-                            <ul class="dropdown-items-in-sidebar" style="display: none;">
-                                <li>Test 101</li>
-                                <li>Test 101</li>
-                                <li>Test 101</li>
-                            </ul>
-                        </li>
-                        <!-- Link -->
-                        <li class="not-active-sidebar-li" onclick="toggleDropdown(this)">
-                            <div class="dropsdowns-col-1">
-                                <div class="for-content">
-                                    <i class="fa-duotone fa-money-bill-simple" style=" --fa-primary-color: var( --primary-icon-color-sidebar); --fa-secondary-color: var( --secondary-icon-color-sidebar)"></i>
-                                    <span>Subscriptions</span>
-                                </div>
-                                <div class="">
-                                    <i class="fa-solid fa-chevron-down for-changing-icon" style="padding: 0; font-size: 8px; color: #5c718d;"></i>
-                                </div>
-                            </div>
-                            <ul class="dropdown-items-in-sidebar" style="display: none;">
-                                <li>Test 101</li>
-                                <li>Test 101</li>
-                                <li>Test 101</li>
-                            </ul>
-                        </li>
-                        <!-- Link -->
-                        <li class="not-active-sidebar-li" onclick="toggleDropdown(this)">
-                            <div class="dropsdowns-col-1">
-                                <div class="for-content">
-                                    <i class="fa-duotone fa-clipboard-check" style=" --fa-primary-color: var( --primary-icon-color-sidebar); --fa-secondary-color: var( --secondary-icon-color-sidebar)"></i>
-                                    <span>contracts</span>
-                                </div>
-                                <div class="">
-                                    <i class="fa-solid fa-chevron-down for-changing-icon" style="padding: 0; font-size: 8px; color: #5c718d;"></i>
-                                </div>
-                            </div>
-                            <ul class="dropdown-items-in-sidebar" style="display: none;">
-                                <li>Test 101</li>
-                                <li>Test 101</li>
-                                <li>Test 101</li>
-                            </ul>
-                        </li>
-                        <!-- Link -->
-                        <li class="not-active-sidebar-li">
-                            <div class="dropsdowns-col-1">
-                                <div class="for-content">
-                                    <i class="fa-duotone fa-cube" style=" --fa-primary-color: var( --primary-icon-color-sidebar); --fa-secondary-color: var( --secondary-icon-color-sidebar)"></i>
-                                    <span>Projects</span>
-                                </div>
-                            </div>
-                        </li>
-                        <!-- Link -->
-                        <li class="not-active-sidebar-li" onclick="toggleDropdown(this)">
-                            <div class="dropsdowns-col-1">
-                                <div class="for-content">
-                                    <i class="fa-duotone fa-circle-user" style=" --fa-primary-color: var( --primary-icon-color-sidebar); --fa-secondary-color: var( --secondary-icon-color-sidebar)"></i>
-                                    <span>Leads</span>
-                                </div>
-                                <div class="">
-                                    <i class="fa-solid fa-chevron-down for-changing-icon" style="padding: 0; font-size: 8px; color: #5c718d;"></i>
-                                </div>
-                            </div>
-                            <ul class="dropdown-items-in-sidebar" style="display: none;">
-                                <li>Test 101</li>
-                                <li>Test 101</li>
-                                <li>Test 101</li>
-                            </ul>
-                        </li>
-                        <!-- Link -->
-                        <li class="not-active-sidebar-li" onclick="toggleDropdown(this)">
-                            <div class="dropsdowns-col-1">
-                                <div class="for-content">
-                                    <i class="fa-duotone fa-message-sms" style=" --fa-primary-color: var( --primary-icon-color-sidebar); --fa-secondary-color: var( --secondary-icon-color-sidebar)"></i>
-                                    <span>SMS</span>
-                                </div>
-                                <div class="">
-                                    <i class="fa-solid fa-chevron-down for-changing-icon" style="padding: 0; font-size: 8px; color: #5c718d;"></i>
-                                </div>
-                            </div>
-                            <ul class="dropdown-items-in-sidebar" style="display: none;">
-                                <li>Test 101</li>
-                                <li>Test 101</li>
-                                <li>Test 101</li>
-                            </ul>
-                        </li>
-                        <!-- Link -->
-                        <li class="not-active-sidebar-li" onclick="toggleDropdown(this)">
-                            <div class="dropsdowns-col-1">
-                                <div class="for-content">
-                                    <i class="fa-duotone fa-phone-volume fa-flip-horizontal" style="--fa-primary-color: var( --primary-icon-color-sidebar); --fa-secondary-color: var(--secondary-icon-color-sidebar)"></i>
-                                    <span>Support</span>
-                                </div>
-                                <div class="">
-                                    <i class="fa-solid fa-chevron-down for-changing-icon" style="padding: 0; font-size: 8px; color: #5c718d;"></i>
-                                </div>
-                            </div>
-                            <ul class="dropdown-items-in-sidebar" style="display: none;">
-                                <li>Test 101</li>
-                                <li>Test 101</li>
-                                <li>Test 101</li>
-                            </ul>
-                        </li>
-                        <!-- Link -->
-                        <li class="not-active-sidebar-li" onclick="toggleDropdown(this)">
-                            <div class="dropsdowns-col-1">
-                                <div class="for-content">
-                                    <i class="fa-duotone fa-book-open" style=" --fa-primary-color: var( --secondary-icon-color-sidebar); --fa-secondary-color: var( --primary-icon-color-sidebar)"></i>
-                                    <span>Knowledgebase</span>
-                                </div>
-                                <div class="">
-                                    <i class="fa-solid fa-chevron-down for-changing-icon" style="padding: 0; font-size: 8px; color: #5c718d;"></i>
-                                </div>
-                            </div>
-                            <ul class="dropdown-items-in-sidebar" style="display: none;">
-                                <li>Test 101</li>
-                                <li>Test 101</li>
-                                <li>Test 101</li>
-                            </ul>
-                        </li>
-                        <!-- Link -->
-                        <li class="not-active-sidebar-li" onclick="toggleDropdown(this)">
-                            <div class="dropsdowns-col-1">
-                                <div class="for-content">
-                                    <i class="fa-duotone fa-bag-shopping" style=" --fa-primary-color: var( --primary-icon-color-sidebar); --fa-secondary-color: var( --secondary-icon-color-sidebar)"></i>
-                                    <span>Orders</span>
-                                </div>
-                                <div class="">
-                                    <i class="fa-solid fa-chevron-down for-changing-icon" style="padding: 0; font-size: 8px; color: #5c718d;"></i>
-                                </div>
-                            </div>
-                            <ul class="dropdown-items-in-sidebar" style="display: none;">
-                                <li>Test 101</li>
-                                <li>Test 101</li>
-                                <li>Test 101</li>
-                            </ul>
-                        </li>
-                        <!-- Link -->
-                        <li class="not-active-sidebar-li" onclick="toggleDropdown(this)">
-                            <div class="dropsdowns-col-1">
-                                <div class="for-content">
-                                    <i class="fa-duotone fa-user-group" style=" --fa-primary-color: var( --primary-icon-color-sidebar); --fa-secondary-color: var( --secondary-icon-color-sidebar)"></i>
-                                    <span>HRM</span>
-                                </div>
-                                <div class="">
-                                    <i class="fa-solid fa-chevron-down for-changing-icon" style="padding: 0; font-size: 8px; color: #5c718d;"></i>
-                                </div>
-                            </div>
-                            <ul class="dropdown-items-in-sidebar" style="display: none;">
-                                <li>Test 101</li>
-                                <li>Test 101</li>
-                                <li>Test 101</li>
-                            </ul>
-                        </li>
-                        <!-- Link -->
-                        <li class="not-active-sidebar-li">
-                            <div class="dropsdowns-col-1">
-                                <div class="for-content">
-                                    <i class="fa-solid fa-folder" style="color: var(--primary-icon-color-sidebar);"></i>
-                                    <span>Documents</span>
-                                </div>
-                            </div>
-                        </li>
-                        <!-- Link -->
-                        <li class="not-active-sidebar-li">
-                            <div class="dropsdowns-col-1">
-                                <div class="for-content">
-                                    <i class="fa-duotone fa-list-check" style=" --fa-primary-color: var( --primary-icon-color-sidebar); --fa-secondary-color: var( --secondary-icon-color-sidebar)"></i>
-                                    <span>Tasks</span>
-                                </div>
-                            </div>
-                        </li>
-                        <!-- Link -->
-                        <li class="not-active-sidebar-li">
-                            <div class="dropsdowns-col-1">
-                                <div class="for-content">
-                                    <i class="fa-duotone fa-clock-rotate-left" style=" --fa-primary-color: var( --primary-icon-color-sidebar); --fa-secondary-color: var( --secondary-icon-color-sidebar)"></i>
-                                    <span>Calender</span>
-                                </div>
-                            </div>
-                        </li>
-                        <!-- Link -->
-                        <li class="not-active-sidebar-li" onclick="toggleDropdown(this)">
-                            <div class="dropsdowns-col-1">
-                                <div class="for-content">
-                                    <i class="fa-duotone fa-inboxes" style=" --fa-primary-color: var( --primary-icon-color-sidebar); --fa-secondary-color: var( --secondary-icon-color-sidebar)"></i>
-                                    <span>Products & Service</span>
-                                </div>
-                                <div class="">
-                                    <i class="fa-solid fa-chevron-down for-changing-icon" style="padding: 0; font-size: 8px; color: #5c718d;"></i>
-                                </div>
-                            </div>
-                            <ul class="dropdown-items-in-sidebar" style="display: none;">
-                                <li>Test 101</li>
-                                <li>Test 101</li>
-                                <li>Test 101</li>
-                            </ul>
-                        </li>
-                        <!-- Link -->
-                        <li class="not-active-sidebar-li" onclick="toggleDropdown(this)">
-                            <div class="dropsdowns-col-1">
-                                <div class="for-content">
-                                    <i class="fa-duotone fa-chart-column" style=" --fa-primary-color: var( --primary-icon-color-sidebar); --fa-secondary-color: var( --secondary-icon-color-sidebar)"></i>
-                                    <span>Reports</span>
-                                </div>
-                                <div class="">
-                                    <i class="fa-solid fa-chevron-down for-changing-icon" style="padding: 0; font-size: 8px; color: #5c718d;"></i>
-                                </div>
-                            </div>
-                            <ul class="dropdown-items-in-sidebar" style="display: none;">
-                                <li>Test 101</li>
-                                <li>Test 101</li>
-                                <li>Test 101</li>
-                            </ul>
-                        </li>
-                        <!-- Link -->
-                        <li class="not-active-sidebar-li" onclick="toggleDropdown(this)">
-                            <div class="dropsdowns-col-1">
-                                <div class="for-content">
-                                    <i class="fa-solid fa-command" style="color: var(--secondary-icon-color-sidebar);"></i>
-                                    <span>Utillities</span>
-                                </div>
-                                <div class="">
-                                    <i class="fa-solid fa-chevron-down for-changing-icon" style="padding: 0; font-size: 8px; color: #5c718d;"></i>
-                                </div>
-                            </div>
-                            <ul class="dropdown-items-in-sidebar" style="display: none;">
-                                <li>Test 101</li>
-                                <li>Test 101</li>
-                                <li>Test 101</li>
-                            </ul>
-                        </li>
-                        <!-- Link -->
-                        <li class="not-active-sidebar-li" onclick="toggleDropdown(this)">
-                            <div class="dropsdowns-col-1">
-                                <div class="for-content">
-                                    <i class="fa-duotone fa-cannabis" style=" --fa-primary-color: var( --primary-icon-color-sidebar); --fa-secondary-color: var( --secondary-icon-color-sidebar)"></i>
-                                    <span>Apperance</span>
-                                </div>
-                                <div class="">
-                                    <i class="fa-solid fa-chevron-down for-changing-icon" style="padding: 0; font-size: 8px; color: #5c718d;"></i>
-                                </div>
-                            </div>
-                            <ul class="dropdown-items-in-sidebar" style="display: none;">
-                                <li>Test 101</li>
-                                <li>Test 101</li>
-                                <li>Test 101</li>
-                            </ul>
-                        </li>
-                        <!-- Link -->
-                        <li class="not-active-sidebar-li">
-                            <div class="dropsdowns-col-1">
-                                <div class="for-content">
-                                    <i class="fa-duotone fa-link" style=" --fa-primary-color: var( --primary-icon-color-sidebar); --fa-secondary-color: var( --secondary-icon-color-sidebar)"></i>
-                                    <span>Plugins</span>
-                                </div>
-                            </div>
-                        </li>
-                        <!-- Link -->
-                        <li class="not-active-sidebar-li" onclick="toggleDropdown(this)">
-                            <div class="dropsdowns-col-1">
-                                <div class="for-content">
-                                    <i class="fa-duotone fa-gear" style=" --fa-primary-color: var( --primary-icon-color-sidebar); --fa-secondary-color: var( --secondary-icon-color-sidebar)"></i>
-                                    <span>Settings</span>
-                                </div>
-                                <div class="">
-                                    <i class="fa-solid fa-chevron-down for-changing-icon" style="padding: 0; font-size: 8px; color: #5c718d;"></i>
-                                </div>
-                            </div>
-                            <ul class="dropdown-items-in-sidebar" style="display: none;">
-                                <li>Test 101</li>
-                                <li>Test 101</li>
-                                <li>Test 101</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </aside>
-    </section>
-    <!-- SideBar Completed -->
+        </section>
+        <!-- Main Sections Completed -->
+    </div>
 
 
 
