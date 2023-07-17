@@ -41,6 +41,7 @@ html,
 body{
     font-family: 'Open Sans', sans-serif;
     transition: all 1s ease-in-out;
+    font-smooth: 2em;
 }
 .main-container{
     display: flex;
@@ -146,12 +147,32 @@ body{
     padding-right: 0px !important;
     margin-right: -25px;
 }
-/* Effects and Animations For Dashboard Header */
 /* DashBoard Header Completed*/
 
 /* Dashboard Cards */
 .dashboard-container .for-cards-custom-paddings{
     padding: 15px 30px;
+}
+.auto-styles-for-new-rows{
+    padding-bottom: 40px;
+    background-color: var(--primary-cards-bg-color);
+    border-radius: 5px;
+    width: 100% !important;
+}
+.auto-responsiveness-for-new-rows{
+    display: flex;
+    gap: 20px;
+    padding-top: 20px;
+}
+.for-colums-custom-paddings{
+    padding-inline: 15px;
+    padding-top: 15px;
+}
+.progress-bar{
+    background-color: black;
+    width: 100%;
+    height: 10px;
+    border-radius: 10px;
 }
 .dashboard-header-Cards{
     padding: 11px 12px;
@@ -282,10 +303,11 @@ body{
     display: flex;
     justify-content: space-between;
     height: 110px;
-    width: 190px;
+    width: 193px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border-radius: 5px;
     padding: 20px 15px;
+    align-items: center;
 }
 .dashboard-container .dashboard-Summary-row .dashboard-summary-clients-column .clients-card .content-for-clients-in-summary h3{
     font-size: 20px;
@@ -311,7 +333,210 @@ body{
     font-size: 13px;
 }
 /* Clients in summary Cards Completed*/
-/* Effects and Animations For Dashboard Summary */
 /* Dashboard Summary Completed*/
 
+/* Clients and Invoices Section*/
+
+/* Recent Clients */
+.dashboard-recent-clients{
+    width: 50%;
+    max-height: 420px;
+    padding-bottom: 30px !important;
+}
+/* Recent Clients Completed*/
+
+/* Recent Invoices */
+.dashboard-recent-invoices{
+    padding-bottom: 30px !important;
+}
+.for-table-in-recent-invoices{
+    overflow-x: auto;
+}
+.table-for-recent-invoices td:first-child {
+    padding-left: 5px !important;
+}
+.table-for-recent-invoices p{
+    font-size: 12px;
+    color: #8d60f8;
+}
+.table-for-recent-invoices h3,
+.table-for-recent-invoices h4,
+.table-for-recent-invoices span {
+    font-size: 12px;
+    line-break: anywhere;
+    color: #575470;
+    font-weight: 600;
+}
+.ribbon-for-tables{
+    font-size: 10px;
+    padding: 4px;
+    text-align: center;
+    border-radius: 25px;
+    transform: rotate(20deg);
+    background-color: #ff9800;
+    color: white;
+}
+.paid-bills-in-recent-invoices{
+    padding: 30px 15px 0px;
+}
+.progressbar-recent-invoice{
+    padding-bottom: 10px;
+}
+.progressbar-recent-invoice:last-child{
+    padding-bottom: 0 !important;
+}
+.progressbar-recent-invoice h3{
+    font-size: 12px;
+    color: #a6a6a6;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+.progressbar-recent-invoice .progress-bar{
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+/* Recent Invoices Completed */
+
+/* Clients and Invoices Section Completed*/
+
+/* Table */
+.table-for-recent-clients,
+.table-template {
+    border-collapse: collapse;
+    width: 100%;
+    overflow-x: scroll;
+}
+.table-for-recent-clients thead,
+.table-template thead {
+    background-color: #f5f7fa;
+    padding: 10px !important;
+    display: table-header-group;
+}
+.table-for-recent-clients thead th,
+.table-template thead th{
+    color: #6e6a8a;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 13px;
+    text-align: left;
+    padding: 10px;
+}
+.table-for-recent-clients tbody tr,
+.table-template tbody tr{
+    border-bottom: 2px solid white;
+}
+.table-for-recent-clients tbody td,
+.table-template tbody td{
+    background-color: #fcfcfc;
+    border-radius: 5px;
+}
+.table-for-recent-clients tbody td i{
+    font-size: 35px;
+    color: #ecf2ff;
+    padding-left: 9px;
+}
+.table-for-recent-clients tbody td h3,
+.table-template tbody td h3 {
+    color: #575470;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 12px;
+}
+.table-for-recent-clients tbody td h6 {
+    color: #6e6a8a;
+    font-weight: 600;
+    text-transform: lowercase;
+    font-size: 11px;
+    letter-spacing: .4px;
+}
+.table-for-recent-clients tbody td span {
+    color: #757678;
+    font-weight: 600;
+    text-transform: lowercase;
+    font-size: 11px;
+}
+
+.table-for-recent-clients td,
+.table-template td {
+    text-align: left;
+    padding: 10px;
+    padding-left: 0px;
+}
+
+/* Table Completed */
+
 /* Dashboard Completed */
+
+
+
+
+
+
+
+
+
+
+/* Table */
+.table-for-recent-clients,
+.table-template {
+    border-collapse: collapse;
+    width: 100%;
+}
+.table-for-recent-clients thead,
+.table-template thead {
+    background-color: #f5f7fa;
+    padding: 10px !important;
+    display: table-header-group;
+}
+.table-for-recent-clients thead th,
+.table-template thead th{
+    color: #6e6a8a;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 13px;
+    text-align: left;
+    padding: 10px;
+}
+.table-for-recent-clients tbody tr,
+.table-template tbody tr{
+    border-bottom: 2px solid white;
+}
+.table-for-recent-clients tbody td,
+.table-template tbody td{
+    background-color: #fcfcfc;
+    border-radius: 5px;
+}
+.table-for-recent-clients tbody td i{
+    font-size: 35px;
+    color: #ecf2ff;
+    padding-left: 9px;
+}
+.table-for-recent-clients tbody td h3,
+.table-template tbody td h3 {
+    color: #575470;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 12px;
+}
+.table-for-recent-clients tbody td h6 {
+    color: #6e6a8a;
+    font-weight: 600;
+    text-transform: lowercase;
+    font-size: 11px;
+    letter-spacing: .4px;
+}
+.table-for-recent-clients tbody td span {
+    color: #757678;
+    font-weight: 600;
+    text-transform: lowercase;
+    font-size: 11px;
+}
+
+.table-for-recent-clients td,
+.table-template td {
+    text-align: left;
+    padding: 10px;
+    padding-left: 0px;
+}
+
+/* Table Completed */

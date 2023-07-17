@@ -59,7 +59,7 @@
             width: 100% !important;
         }
         .for-cards-custom-paddings {
-            padding: 15px 15px;
+            padding: 15px 15px !important;
         }
     }
     /* Clients in summary */
@@ -69,6 +69,15 @@
     }
     /* Clients in summary Completed */
     /* Summary Completed*/
+
+    /* Recent Clients */
+    /* Recent Clients Completed*/
+
+    /* Recent Clients */
+    .table-for-recent-invoices {
+        min-width: 500px;
+    }
+    /* Recent Clients Completed */
 
     /* Dashboard Completed */
 }
@@ -91,7 +100,16 @@
         animation: forMobileHeaderForMobiles 5s;
     }
     /* SideBar Completed */
-    
+}
+/* General Stylings */
+@media only screen and (max-width: 768px) {
+    .auto-styles-for-new-rows{
+        flex-wrap: wrap !important;
+    }
+    .auto-responsiveness-for-new-rows{
+        flex-wrap: wrap;
+        width: 100%;
+    }
 }
 
 /* Effects and Animations For sidebar in mobile */
