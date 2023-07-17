@@ -11,9 +11,25 @@
     --primary-icon-color-sidebar: #494b74;
     --secondary-icon-color-sidebar: #414a60;
     /* Dashboard Variables */
-    /* Header */
+    --primary-dashboard-bg-color: #f2f4f6;
+    --primary-cards-bg-color: #fff;
+    --primary-cards-header-border-color: #f2f2f2;
+    --primary-cards-header-font-color: #353445;
+    --yellow-circle-in-header:#eac981;
+    --green-circle-in-header:#85c3bd;
+    --dots-icon-color: #bec5d2;
+    /* Dashboard Header */
     --primary-icon-color-dashboard-header: #d9d5fb;
     --secondary-icon-color-dashboard-header: #5443ee;
+    --reset-icon-color: #5443ee;
+    /* Dashboard Header Completed */
+
+    /* Dashboard Summary */
+    --expensive-card-background-color: #6a6cff;
+    /* Dashboard Summary Completed */
+
+    /* Dashboard Variables Completed */
+
 }
 /* General Styling */
 * {
@@ -93,7 +109,9 @@ body{
 .dashboard-container{
     flex-basis: 82%;
     width: 82%;
+    background-color: var(--primary-dashboard-bg-color);
 }
+/* DashBoard Header */
 .dashboard-container .dashboard-header-row{
     height: 58px;
     background-color: white;
@@ -114,9 +132,6 @@ body{
     width: 20px;
     cursor: pointer;
 }
-/* .dashboard-container .dashboard-header-row .dashboard-header-navs-column nav ul{
-
-} */
 .dashboard-container .dashboard-header-row .dashboard-header-navs-column nav ul li{
     display: inline;
     padding-right: 25px;
@@ -131,5 +146,172 @@ body{
     padding-right: 0px !important;
     margin-right: -25px;
 }
+/* Effects and Animations For Dashboard Header */
+/* DashBoard Header Completed*/
 
-/* Effects and Animations For Dashboard */
+/* Dashboard Cards */
+.dashboard-container .for-cards-custom-paddings{
+    padding: 15px 30px;
+}
+.dashboard-header-Cards{
+    padding: 11px 12px;
+    padding-top: 9px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--primary-cards-header-border-color);
+}
+.dashboard-header-Cards .text-container-for-header-cards h3{
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--primary-cards-header-font-color);
+}
+.dashboard-header-Cards .Icons-container-for-header-cards{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.dashboard-header-Cards .Icons-container-for-header-cards .reset-button-in-cards-header{
+    color: var(--reset-icon-color);
+    font-size: 16px;
+    cursor: pointer;
+}
+.dashboard-header-Cards .Icons-container-for-header-cards .yellow-button-for-cards{
+    border-radius: 58%;
+    display: block;
+    margin-left: -15px;
+    height: 13px;
+    width: 13px !important;
+    background: var(--yellow-circle-in-header);
+    cursor: pointer;
+}
+.dashboard-header-Cards .Icons-container-for-header-cards .dots-in-cards-header{
+    color: var(--dots-icon-color);
+    cursor: pointer;
+    font-size: 16px;
+}
+/* Dashboard Cards Completed */
+/* Dashboard Summary */
+.dashboard-container .dashboard-Summary-row {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 40px;
+    background-color: var(--primary-cards-bg-color);
+    border-radius: 5px;
+}
+.dashboard-container .dashboard-Summary-row .dashboard-Summary-column {
+    padding: 15px 23px 0;
+    display: flex;
+    gap: 40px;
+}
+.dashboard-container .dashboard-Summary-row .dashboard-Summary-column .listed-expenses-card {
+    background-color: var(--expensive-card-background-color);
+    border-radius: 5px;
+    height: 415px;
+    width: 270px;
+    padding: 30px 15px 0;
+}
+.dashboard-container .dashboard-Summary-row .dashboard-Summary-column .listed-expenses-card .summary-card {
+    display: flex;
+    gap: 25px;
+    padding-bottom: 20px;
+}
+.dashboard-container .dashboard-Summary-row .dashboard-Summary-column .listed-expenses-card .summary-card:last-child{
+    padding-bottom: 0 !important;
+}
+.dashboard-container .dashboard-Summary-row .dashboard-Summary-column .listed-expenses-card .summary-card .icon-box{
+    background-color: #e9faee;
+    border-radius: 5px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dashboard-container .dashboard-Summary-row .dashboard-Summary-column .listed-expenses-card .summary-card .icon-box i{
+    font-size: 15px;
+    width: 17px;
+    height: 17px;
+    color: #1bc5bd;
+}
+.dashboard-container .dashboard-Summary-row .dashboard-Summary-column .listed-expenses-card .summary-card .card-content h3{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+.dashboard-container .dashboard-Summary-row .dashboard-Summary-column .listed-expenses-card .summary-card .card-content h6{
+    color: #f4f0ff;
+    font-size: 11px;
+    font-weight: 400;
+}
+.icon-box-2-in-cards{
+    background-color: #fff5f8 !important;
+}
+.icon-box-2-in-cards i {
+    font-size: 17px !important;
+    width: 17px;
+    height: 17px;
+}
+.icon-box-3-in-cards i{
+    font-size: 14px !important;
+    width: 17px !important;
+    height: 14px !important;
+}
+.icon-box-4-in-cards{
+    background-color: #fff7dd !important;
+}
+.icon-box-4-in-cards i ,
+.icon-box-5-in-cards i{
+    width: 15px !important;
+}
+.icon-box-5-in-cards {
+    background-color: #f8f5ff !important;
+}
+.icon-box-6-in-cards {
+    background-color: #fff5f8 !important;
+}
+/* Clients in summary Cards*/
+.dashboard-container .dashboard-Summary-row .dashboard-summary-clients-column{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-content: flex-start
+}
+.dashboard-container .dashboard-Summary-row .dashboard-summary-clients-column .clients-card {
+    display: flex;
+    justify-content: space-between;
+    height: 110px;
+    width: 190px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 5px;
+    padding: 20px 15px;
+}
+.dashboard-container .dashboard-Summary-row .dashboard-summary-clients-column .clients-card .content-for-clients-in-summary h3{
+    font-size: 20px;
+    font-weight: 600;
+    color: #33345f;
+    padding-bottom: 10px;
+}
+.dashboard-container .dashboard-Summary-row .dashboard-summary-clients-column .clients-card .content-for-clients-in-summary h6{
+    font-size: 15px;
+    font-weight: 600;
+    color: #8f9db4;
+}
+.dashboard-container .dashboard-Summary-row .dashboard-summary-clients-column .clients-card .icon-box-for-clients-in-summary {
+    background-color: #f3f6f9;
+    border-radius: 5px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dashboard-container .dashboard-Summary-row .dashboard-summary-clients-column .clients-card .icon-box-for-clients-in-summary i {
+    font-size: 13px;
+}
+/* Clients in summary Cards Completed*/
+/* Effects and Animations For Dashboard Summary */
+/* Dashboard Summary Completed*/
+
+/* Dashboard Completed */

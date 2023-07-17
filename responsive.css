@@ -16,6 +16,7 @@
     }
     .sidebar-container .sidebar-logo-column img{
         width: 224px;
+        cursor: pointer;
     }
     .not-active-sidebar-li{
         width: 100%;
@@ -39,7 +40,35 @@
         margin-right: -10px !important;
     }
     /* Header Completed */
-
+    /* Dashboard Cards */
+    .dashboard-header-Cards .Icons-container-for-header-cards{
+        display: flex;
+        gap: 10px;
+    }
+    .dashboard-header-Cards .Icons-container-for-header-cards .yellow-button-for-cards{
+        margin-left: 0;
+    }
+    /* Dashboard Cards Completed */
+    /* Summary */
+    @media only screen and (max-width: 530px) {
+        .dashboard-Summary-column{
+            flex-direction: column;
+            padding: 15px 15px 0 !important;
+        }
+        .listed-expenses-card{
+            width: 100% !important;
+        }
+        .for-cards-custom-paddings {
+            padding: 15px 15px;
+        }
+    }
+    /* Clients in summary */
+    .clients-card {
+        width: 100% !important;
+        min-width: 190px !important;
+    }
+    /* Clients in summary Completed */
+    /* Summary Completed*/
 
     /* Dashboard Completed */
 }
@@ -61,6 +90,7 @@
     .mobile-header-show{
         animation: forMobileHeaderForMobiles 5s;
     }
+    /* SideBar Completed */
     
 }
 
