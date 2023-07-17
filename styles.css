@@ -114,9 +114,9 @@ body{
     width: 20px;
     cursor: pointer;
 }
-.dashboard-container .dashboard-header-row .dashboard-header-navs-column nav ul{
+/* .dashboard-container .dashboard-header-row .dashboard-header-navs-column nav ul{
 
-}
+} */
 .dashboard-container .dashboard-header-row .dashboard-header-navs-column nav ul li{
     display: inline;
     padding-right: 25px;

@@ -10,7 +10,8 @@
     /* SideBar */
     .sidebar-container {
         width: 100%;
-        transform: translateX(-10000%);
+        position: absolute;
+        left: -10000;
         display: none;
     }
     .sidebar-container .sidebar-logo-column img{
@@ -35,29 +36,73 @@
     }
     .dashboard-header-navs-column nav ul li:last-child i{
         padding-left: 0px !important;
+        margin-right: -10px !important;
     }
     /* Header Completed */
 
 
     /* Dashboard Completed */
 }
+@media only screen and (max-width: 960px) and (min-width: 769px) {
+    /* SideBar */
+    .sidebar-container {
+        width: 40%;
+    }
+    .mobile-header-show{
+        animation: forMobileHeaderFortablets 5s;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* SideBar */
+    .sidebar-container {
+        width: 100%;
+    }
+    .mobile-header-show{
+        animation: forMobileHeaderForMobiles 5s;
+    }
+    
+}
 
 /* Effects and Animations For sidebar in mobile */
 .mobile-header-show{
     display: block;
-    transform: translateX(0);
-    transition: forMobileHeader 100s ease;
+    left: 0;
+    z-index: 1000;
 }
 .content-hide-for-mobile-header{
-    display: none;
+    display: block;
+}
+.overlay-for-tab-header{
+    background-color: black;
+    height: 2000px;
+    width: 100%;
+    opacity: 0.4;
+    z-index: 4;
+    position: absolute;
+    display: block;
+    animation: forMobileHeaderForMobiles 2.5s;
+    
+}
+@media only screen and (min-width: 960px) {
+    .overlay-for-tab-header{
+        display: none;
+    }
 }
 
-@keyframes forMobileHeader {
+@keyframes forMobileHeaderForMobiles {
     0% {
         width: 10%;
     }
-
     100% {
-        width: 50%;
+        width: 100%;
+    }
+}
+@keyframes forMobileHeaderFortablets {
+    0% {
+        width: 10%;
+    }
+    100% {
+        width: 40%;
     }
 }

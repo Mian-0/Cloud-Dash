@@ -30,13 +30,24 @@ function togglerr(element) {
 
 // For Mobile Header
 const mobileHeaderBody = document.querySelector(".sidebar-container");
-const dashboardBody = document.querySelector(".dashboard-container");
-
+const overlayForMobiles = document.querySelector("#overlayForMobile");
 function mobileHeaderOpen(element) {
-  mobileHeaderBody.classList.add("mobile-header-show");
-  dashboardBody.classList.add("content-hide-for-mobile-header");
+  if (window.innerWidth <= 960) {
+    mobileHeaderBody.classList.add("mobile-header-show");
+    overlayForMobiles.classList.add("overlay-for-tab-header");
+  }
+  if (window.innerWidth > 768 && window.innerWidth <= 960) {
+    overlayForMobiles.addEventListener("click", () => {
+      mobileHeaderBody.classList.remove("mobile-header-show");
+      overlayForMobiles.classList.remove("overlay-for-tab-header");
+    })
+  }
+
 }
 function mobileHeaderClose(element) {
-  mobileHeaderBody.classList.remove("mobile-header-show");
-  dashboardBody.classList.remove("content-hide-for-mobile-header");
+  if (window.innerWidth <= 960) {
+    console.log("Close");
+    mobileHeaderBody.classList.remove("mobile-header-show");
+    overlayForMobiles.classList.remove("overlay-for-tab-header");
+  } 
 }
