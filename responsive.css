@@ -141,6 +141,11 @@
         margin-bottom: 0px !important;
     }
     /* Income vs Expense Completed */
+    /* calender */
+    .dashboard-recent-expense-column img{
+        width: 80% !important;
+    }
+    /* calender Completed */
 }
 /* General Stylings */
 @media only screen and (max-width: 768px) {

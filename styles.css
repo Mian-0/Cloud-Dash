@@ -509,4 +509,21 @@ body{
     top: -8px;
 }
 /* Recent Projects Completed */
+
+/* Calender */
+.dashboard-calender{
+    max-height: 536px !important;
+    height: 100% !important;
+}
+.dashboard-Calender-container{
+    /* margin-bottom: -190px !important; */
+}
+/* Calender Completed*/
+
+/* Latest Expense */
+.dashboard-recent-expenses{
+    height: fit-content;
+}
+/* Lastest Expense Completed */
+
 /* Dashboard Completed */
