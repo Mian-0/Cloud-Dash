@@ -396,7 +396,6 @@ body{
     border-bottom-right-radius: 0 !important;
 }
 /* Recent Invoices Completed */
-
 /* Clients and Invoices Section Completed*/
 
 /* Table */
@@ -462,81 +461,52 @@ body{
     padding: 10px;
     padding-left: 0px;
 }
-
 /* Table Completed */
-
-/* Dashboard Completed */
-
-
-
-
-
-
-
-
-
-
-/* Table */
-.table-for-recent-clients,
-.table-template {
-    border-collapse: collapse;
-    width: 100%;
+/* Income vs Expense */
+.dashboard-Income-vs-Expense-container{
+    height: 480px !important;
 }
-.table-for-recent-clients thead,
-.table-template thead {
-    background-color: #f5f7fa;
-    padding: 10px !important;
-    display: table-header-group;
+.dashboard-Income-vs-Expense-colum-content{
+    width: 100% !important;
+    height: 100% !important;
 }
-.table-for-recent-clients thead th,
-.table-template thead th{
-    color: #6e6a8a;
-    font-weight: 600;
-    text-transform: capitalize;
-    font-size: 13px;
-    text-align: left;
+.dashboard-Income-vs-Expense-colum-content img{
+    width: 100% !important;
+    height: 90% !important;
+}
+.for-height-adjustments-incomevsexpense{
+    margin-bottom: -40px !important;
+}
+.for-height-adjustements-Incomevsexpense-maincontainer{
+    margin-bottom: 40px !important;
+}
+/* Income vs Expense Completed */
+/* Recent Projects */
+.table-for-recent-projects td{
     padding: 10px;
 }
-.table-for-recent-clients tbody tr,
-.table-template tbody tr{
-    border-bottom: 2px solid white;
-}
-.table-for-recent-clients tbody td,
-.table-template tbody td{
-    background-color: #fcfcfc;
-    border-radius: 5px;
-}
-.table-for-recent-clients tbody td i{
-    font-size: 35px;
-    color: #ecf2ff;
-    padding-left: 9px;
-}
-.table-for-recent-clients tbody td h3,
-.table-template tbody td h3 {
+.table-for-recent-projects h2{
     color: #575470;
     font-weight: 700;
-    text-transform: capitalize;
     font-size: 12px;
 }
-.table-for-recent-clients tbody td h6 {
-    color: #6e6a8a;
-    font-weight: 600;
-    text-transform: lowercase;
-    font-size: 11px;
-    letter-spacing: .4px;
+.table-for-recent-projects h3{
+    color: #575470;
+    font-weight: 700;
+    font-size: 12px;
 }
-.table-for-recent-clients tbody td span {
+.table-for-recent-projects span{
     color: #757678;
     font-weight: 600;
-    text-transform: lowercase;
     font-size: 11px;
 }
-
-.table-for-recent-clients td,
-.table-template td {
-    text-align: left;
-    padding: 10px;
-    padding-left: 0px;
+.table-for-recent-projects h2,
+.table-for-recent-projects h3{
+    padding-bottom: 10px !important;
 }
-
-/* Table Completed */
+.table-for-recent-projects span{
+    position: relative;
+    top: -8px;
+}
+/* Recent Projects Completed */
+/* Dashboard Completed */

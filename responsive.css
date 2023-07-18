@@ -1,4 +1,15 @@
 @media only screen and (max-width: 1258px) and (min-width: 961px) {
+    .table-for-recent-invoices {
+        min-width: 500px !important;
+        width: 500px;
+    }
+    .dashboard-recent-invoices {
+        width: 50% !important;
+    }
+    .for-table-in-recent-invoices {
+        overflow-x: scroll !important;
+        width: 100%;
+    }
     .sidebar-container {
         width: 230px;
     }
@@ -79,6 +90,12 @@
     }
     /* Recent Clients Completed */
 
+    /* Recent Projects */
+    .dashboard-recent-Projects{
+        width: 100% !important;
+    }
+    /* Recent Projects Completed*/
+
     /* Dashboard Completed */
 }
 @media only screen and (max-width: 960px) and (min-width: 769px) {
@@ -89,6 +106,11 @@
     .mobile-header-show{
         animation: forMobileHeaderFortablets 5s;
     }
+    /* Recent Invocies */
+    .dashboard-recent-invoices{
+        width: 50% !important;
+    }
+    /* Recent Invocies Completed */
 }
 
 @media only screen and (max-width: 768px) {
@@ -100,6 +122,25 @@
         animation: forMobileHeaderForMobiles 5s;
     }
     /* SideBar Completed */
+    /* Income vs Expense */
+    .dashboard-Income-vs-Expense-container{
+        height: fit-content;
+    }
+    .dashboard-Income-vs-Expense-colum-content{
+        display: flex;
+        justify-content: center;
+    }
+    .dashboard-Income-vs-Expense-colum-content img{
+        width: 60% !important;
+        height: 90% !important;
+    }
+    .for-height-adjustments-incomevsexpense{
+        margin-bottom: 0px !important;
+    }
+    .for-height-adjustements-Incomevsexpense-maincontainer{
+        margin-bottom: 0px !important;
+    }
+    /* Income vs Expense Completed */
 }
 /* General Stylings */
 @media only screen and (max-width: 768px) {
