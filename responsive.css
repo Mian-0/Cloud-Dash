@@ -131,7 +131,7 @@
         justify-content: center;
     }
     .dashboard-Income-vs-Expense-colum-content img{
-        width: 60% !important;
+        width: 100% !important;
         height: 90% !important;
     }
     .for-height-adjustments-incomevsexpense{
