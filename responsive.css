@@ -146,6 +146,11 @@
         width: 80% !important;
     }
     /* calender Completed */
+    /* Latest Income */
+    .lastest-income-place-holder-column{
+        display: none;
+    }
+    /* Latest Income Completed*/
 }
 /* General Stylings */
 @media only screen and (max-width: 768px) {

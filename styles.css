@@ -559,5 +559,40 @@ body{
     font-weight: 700;
 }
 /* Net Worth & Account Balance completed */
+/* Sales Section 1 */
+.sales-section-1-main-container{
+    display: flex;
+    justify-content: center;
+    padding: 60px 0;
+}
+.outer-ring-sales-section-1{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 30px solid #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sales-section-1-content h5{
+    font-size: 20px;
+    text-align: center;
+    color: #818586;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+.sales-section-1-content h6{
+    font-size: 15px;
+    text-align: center;
+    color: #818586;
+    font-weight: 500;
+}
+/* Sales Section 1 Completed*/
+
+/* Latest Income */
+.Latest-Income-table h6{
+    color: #3bc493 !important;
+}
+/* Latest Income Completed */
 
 /* Dashboard Completed */
