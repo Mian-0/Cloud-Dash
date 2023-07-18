@@ -373,7 +373,6 @@ body{
     padding: 4px;
     text-align: center;
     border-radius: 25px;
-    transform: rotate(20deg);
     background-color: #ff9800;
     color: white;
 }
@@ -545,5 +544,20 @@ body{
     font-size: 12px;
 }
 /* Lastest Expense Completed */
+
+/* Net Worth & Account Balance */
+.table-for-NetWorthandBalance th:first-child,
+.table-for-NetWorthandBalance span{
+    font-size: 12px;
+    color: #7859f7;
+    font-weight: 700;
+}
+.table-for-NetWorthandBalance th:last-child,
+.table-for-NetWorthandBalance h6{
+    font-size: 12px;
+    color: #5a5a79;
+    font-weight: 700;
+}
+/* Net Worth & Account Balance completed */
 
 /* Dashboard Completed */
