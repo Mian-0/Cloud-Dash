@@ -156,6 +156,14 @@
         flex-wrap: wrap;
         width: 100%;
     }
+    .for-over-flowing-table{
+        overflow-x: auto;
+        width: 100%;
+    }
+    .for-over-flowing-table table{
+        min-width: 300px;
+        width: 100%;
+    }
 }
 
 /* Effects and Animations For sidebar in mobile */
