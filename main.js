@@ -31,23 +31,22 @@ function togglerr(element) {
 // For Mobile Header
 const mobileHeaderBody = document.querySelector(".sidebar-container");
 const overlayForMobiles = document.querySelector("#overlayForMobile");
+const dashboardMainContainer = document.querySelector(".dashboard-container")
 function mobileHeaderOpen(element) {
-  if (window.innerWidth <= 960) {
+   if (window.innerWidth <= 960) {
     mobileHeaderBody.classList.add("mobile-header-show");
     overlayForMobiles.classList.add("overlay-for-tab-header");
+    dashboardMainContainer.classList.add("Forhiding");
+    console.log("width is below 960")
   }
-  if (window.innerWidth > 768 && window.innerWidth <= 960) {
-    overlayForMobiles.addEventListener("click", () => {
-      mobileHeaderBody.classList.remove("mobile-header-show");
-      overlayForMobiles.classList.remove("overlay-for-tab-header");
-    })
-  }
-
+  console.log(window.innerWidth)
 }
 function mobileHeaderClose(element) {
   if (window.innerWidth <= 960) {
     console.log("Close");
     mobileHeaderBody.classList.remove("mobile-header-show");
     overlayForMobiles.classList.remove("overlay-for-tab-header");
+    dashboardMainContainer.classList.remove("Forhiding");
+    dashboardMainContainer.style.display = "block"
   } 
 }
