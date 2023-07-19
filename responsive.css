@@ -102,6 +102,8 @@
     /* SideBar */
     .sidebar-container {
         width: 40%;
+        position: relative;
+        left: -1000;
     }
     .mobile-header-show{
         animation: forMobileHeaderFortablets 5s;
@@ -178,7 +180,7 @@
     z-index: 1000;
 }
 .Forhiding{
-    display: none !important;
+    display: block ;
     transition: opacity 5s for-hiding-main-dashboard-on-mobiles;
 }
 .content-hide-for-mobile-header{
@@ -186,7 +188,7 @@
 }
 .overlay-for-tab-header{
     background-color: black;
-    height: 2000px;
+    height: 552.9vh;
     width: 100%;
     opacity: 0.4;
     z-index: 4;
@@ -204,6 +206,10 @@
     .overlay-for-tab-header{
         display: none;
     }
+    .Forhiding{
+        display: none;
+        transition: opacity 5s for-hiding-main-dashboard-on-mobiles;
+    }
 }
 @media only screen and (max-width: 768px) {
     .overlay-for-tab-header{
@@ -214,13 +220,19 @@
     .Forhiding{
         display: block !important;
     }
+    .mobile-header-hide{
+        display: none;
+    }
+    .dashboard-container{
+        position: relative;
+        overflow-x: auto;
+    }
 }
-
 @keyframes forMobileHeaderForMobiles {
     0% {
         width: 10%;
     }
-    100% {
+    50%{
         width: 100%;
     }
 }
